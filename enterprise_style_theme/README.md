@@ -15,15 +15,15 @@ Install MuK Backend Theme (`muk_web_theme`) for the same Odoo version, and its d
 
 ## Installation
 
-1. Put `aya_backend_theme` into an Odoo addons directory.
+1. Put `enterprise_style_theme` into an Odoo addons directory.
 2. Ensure compatible MuK dependencies are available in the addons path.
 3. Restart Odoo, update the Apps list and install **Enterprise Style Theme**.
 4. Refresh the browser with Ctrl+F5.
 
-Technical module name `aya_backend_theme` is retained for compatibility with existing installations. Upgrading does not require uninstalling or migrating the existing module.
+Technical name: enterprise_style_theme. For an earlier release with a different technical name, back up the database, uninstall only the earlier styling extension, keep MuK installed, then install this module. Do not enable both styling extensions together.
 
 ## Verification and limits
 
-Version 20.0.1.2.0 was installed on the originating Odoo 20 instance. The web, print and dark CSS bundles compiled successfully; the CSS and SVG assets were served successfully. A clean installation on a separate Odoo 20 instance remains to be checked before Store submission. The light launcher background is intentional even when dark mode is selected. Applications shown depend on installed modules and access rights.
+The styling in the preceding version was verified on the originating Odoo 20 instance. This release changes the technical name and asset paths; installation under the new technical name has not yet been tested. The web, print and dark CSS bundles compiled successfully; the CSS and SVG assets were served successfully. A clean installation on a separate Odoo 20 instance remains to be checked before Store submission. The light launcher background is intentional even when dark mode is selected. Applications shown depend on installed modules and access rights.
 
 No external services, tracking, activation keys, user data collection or additional access permissions are introduced. Uninstall this module to remove its styles; MuK is managed separately.
