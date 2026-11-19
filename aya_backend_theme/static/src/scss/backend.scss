@@ -1,0 +1,63 @@
+
+.o_web_client {
+ --aya-accent: #714b67;
+ .o_main_navbar { box-shadow: 0 2px 10px rgba(30,20,40,.12); }
+ .o_control_panel { padding-top: 14px; padding-bottom: 14px; }
+ .o_form_view .o_form_sheet_bg { background-color: var(--o-webclient-background-color, #f5f6f8); }
+ .o_form_view .o_form_sheet { border-radius: 12px; box-shadow: 0 3px 16px rgba(30,20,40,.05); }
+ .btn { border-radius: 7px; }
+ .o_searchview { border-radius: 8px; }
+ .o_list_view .o_list_table thead th { padding-top: 12px; padding-bottom: 12px; }
+ .o_list_view .o_data_row > td { padding-top: 10px; padding-bottom: 10px; }
+ .o_kanban_record { border-radius: 10px; }
+ .dropdown-menu { border-radius: 10px; box-shadow: 0 8px 28px rgba(30,20,40,.12); }
+}
+@media (max-width: 767px) {
+ .o_web_client .o_control_panel { padding-top: 8px; padding-bottom: 8px; }
+ .o_web_client .o_form_view .o_form_sheet { border-radius: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .o_web_client *, .o_web_client *::before, .o_web_client *::after { scroll-behavior: auto !important; }
+}
+
+/* Launcher inspired by the supplied reference; uses installed app icons. */
+.o-dropdown--menu.mk_app_menu {
+ background-color: #f6f7f9 !important;
+ background-image: url('/aya_backend_theme/static/src/cross-grid.svg'), radial-gradient(ellipse at center, #edf0f3 0%, #f8f9fa 85%) !important;
+ background-size: 15px 15px, cover !important;
+ background-repeat: repeat, no-repeat !important;
+ padding: 46px 24px 60px !important;
+ gap: 0 !important;
+ box-shadow: none !important;
+ .o_app {
+  width: 16.666667%; margin-top: 0; margin-bottom: 38px; padding: 0 8px;
+  > a { text-decoration: none; gap: 11px; padding: 0; }
+  > a .mk_app_icon {
+   width: 90px; height: 90px; max-width: 90px; padding: 17px;
+   object-fit: contain; border-radius: 12px; background: #fff;
+   box-shadow: 0 0 0 1px rgba(25,35,45,.12), 0 2px 3px rgba(25,35,45,.10);
+  }
+  > a .mk_app_name { color: #111827 !important; font-size: 16px; font-weight: 500; text-align: center; white-space: normal; }
+  > a:focus-visible { outline: 2px solid #714b67; outline-offset: 5px; border-radius: 8px; }
+ }
+}
+@media (max-width: 991px) {
+ .o-dropdown--menu.mk_app_menu { padding: 30px 20px !important;
+  .o_app { width: 25%; }
+ }
+}
+@media (max-width: 575px) {
+ .o-dropdown--menu.mk_app_menu { padding: 24px 12px !important;
+  .o_app { width: 33.333333%; margin-bottom: 26px;
+   > a .mk_app_icon { width: 68px; height: 68px; max-width: 68px; padding: 12px; }
+   > a .mk_app_name { font-size: 13px; }
+  }
+ }
+}
+
+@media (min-width: 1108px) {
+ .o-dropdown--menu.mk_app_menu {
+  padding-left: calc((100vw - 1060px) / 2) !important;
+  padding-right: calc((100vw - 1060px) / 2) !important;
+ }
+}

@@ -1,0 +1,21 @@
+{
+    'name': 'Enterprise Style Theme',
+    'version': '20.0.1.2.0',
+    'summary': 'Light cross-pattern app launcher and refined backend styling',
+    'description': 'Visual customization for Odoo 20 Community using MuK Backend Theme. Includes a light cross-pattern launcher background, responsive app tiles and refined form and list spacing. No Enterprise code or Enterprise applications are included.',
+    'author': 'DIGITEN SARL',
+    'maintainer': 'DIGITEN SARL',
+    'support': 'idiallo@digitensarl.com',
+    'website': 'https://github.com/ib-diallo/enterprise-style-theme',
+    'images': ['static/description/preview.png'],
+    'category': 'Themes/Backend',
+    'license': 'LGPL-3',
+    'depends': ['muk_web_theme'],
+    'assets': {'web.assets_backend': ['aya_backend_theme/static/src/scss/backend.scss']},
+    'price': 0.0,
+    'currency': 'EUR',
+    'installable': True,
+    'application': False,
+    'auto_install': False,
+}
+
